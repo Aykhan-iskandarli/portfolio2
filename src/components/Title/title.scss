@@ -1,0 +1,51 @@
+.title {
+margin-left: 100px;
+  margin-top: 50px;
+
+  position: relative;
+  @media screen and (max-width: 1000px) {
+ 
+    margin-left: 20px;
+  }
+
+  h1 {
+    color: #fff;
+    z-index: 99;
+    text-transform: uppercase;
+    position: relative;
+    width: 250px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 0;
+      border-radius: 20px;
+      background-color: #1a6ae0ec;
+      width: 50%;
+      height: 6px;
+      @media screen and (max-width: 1000px) {
+        width: 50%;
+        top: 45px;
+    
+      }
+    }
+  }
+  span {
+    content: "";
+
+    position: absolute;
+    top: 45%;
+    left: -5px;
+    font-size: 65px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 0;
+    font-weight: 700;
+    color: #0530705d;
+    @media screen and (max-width: 1000px) {
+      
+      top: 55%;
+      font-size: 45px;
+    }
+  }
+}

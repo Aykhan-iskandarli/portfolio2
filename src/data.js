@@ -78,7 +78,7 @@ const blogs = [
         year: '2019'
     }
 ];
-export const featuredPortfolio = [
+export const reactjs = [
     {
       id: 1,
       title: "Fake Twitter Generator",
@@ -103,10 +103,10 @@ export const featuredPortfolio = [
     },
     {
       id: 4,
-      title: "Admin Dashboard",
+      title: "Car Washing",
       img:
-        "https://833250.smushcdn.com/1694534/wp-content/uploads/2020/07/Screen-Shot-2020-07-20-at-15.55.22-1024x549.png?lossy=1&strip=1&webp=1",
-        link:"https://web-platform-kky7ge.stackblitz.io"
+        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwd2FzaHxlbnwwfHwwfHw%3D&w=1000&q=80",
+        link:"https://car-washing.netlify.app/"
     },
     {
       id: 5,
@@ -119,7 +119,7 @@ export const featuredPortfolio = [
       id: 6,
       title: "E-commerce redux",
       img:
-        "https://coursemarks.com/wp-content/uploads/2021/02/3812952_4de6.jpg",
+        "https://i.ytimg.com/vi/377AQ0y6LPA/maxresdefault.jpg",
       link:"https://e-commerce-redux.surge.sh/"
     },
  
@@ -159,12 +159,13 @@ export const featuredPortfolio = [
     },
   ];
   
-  export const mobilePortfolio = [
+  export const nodejs = [
     {
       id: 1,
-      title: "Mobile Social Media ",
+      title: "Photo app ",
       img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+        "https://images.alphacoders.com/478/478024.jpg",
+      link:"https://nodejs-photoapp.herokuapp.com/"
     },
     {
       id: 2,

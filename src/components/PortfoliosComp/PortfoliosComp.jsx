@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  featuredPortfolio,
+  reactjs,
   webPortfolio,
-  mobilePortfolio,
+  nodejs,
   designPortfolio,
   contentPortfolio,
 } from "../../data";
@@ -12,22 +12,23 @@ import { motion } from "framer-motion"
 
 
 const PortfoliosComp = () => {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("reactjs");
   const [data, setData] = useState([]);
 
   const list = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "reactjs",
+      title: "React app",
+    },
+    {
+      id: "nodejs",
+      title: "Node js",
     },
     {
       id: "web",
       title: "Web App",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
+ 
     {
       id: "design",
       title: "Design App",
@@ -39,14 +40,14 @@ const PortfoliosComp = () => {
   ];
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "reactjs":
+        setData(reactjs);
         break;
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "nodejs":
+        setData(nodejs);
         break;
       case "design":
         setData(designPortfolio);
@@ -55,7 +56,7 @@ const PortfoliosComp = () => {
         setData(contentPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(reactjs);
     }
   }, [selected]);
 

@@ -4,7 +4,7 @@ import profil from "../../image/profil/bg.png";
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 import jsPDF from 'jspdf';
-import cv from "../../image/cv/cv_1.png"
+import cv from "../../image/cv/cv.png"
 import loading from "../../image/loading.gif"
 
 
@@ -17,7 +17,7 @@ const AboutComp = () => {
    },1500)
     var doc =new jsPDF("landscape","px", "a4", "false")
     doc.addImage(cv,"PNG", 200, 20, 250, 400)
-    doc.save("Front-End DEveloper.pdf")
+    doc.save("Front-End Developer.pdf")
 }
   return (
     <>
